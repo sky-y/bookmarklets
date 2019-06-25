@@ -1,0 +1,30 @@
+{
+  "name": "amazon-bookmarklet",
+  "version": "1.0.0",
+  "description": "A bookmarklet to generate a shotened URL from Amazon (optionally with title).",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "amazon-bookmarklet-summary"
+  },
+  "author": "Yuki Fujiwara",
+  "license": "MIT",
+  "scripts": {
+    "bookmarklet": "bookmarklet",
+    "build:url": "bookmarklet src/url.js dest/url.txt",
+    "build:url-title": "bookmarklet src/url-title.js dest/url-title.txt",
+    "build:markdown": "bookmarklet src/markdown.js dest/markdown.txt",
+    "build:af-url": "bookmarklet src/af-url.js dest/af-url.txt",
+    "build:af-url-title": "bookmarklet src/af-url-title.js dest/af-url-title.txt",
+    "build:af-markdown": "bookmarklet src/af-markdown.js dest/af-markdown.txt",
+    "build:af-scrapbox": "bookmarklet src/af-scrapbox.js dest/af-scrapbox.txt",
+    "build:scrapbox": "bookmarklet src/scrapbox.js dest/scrapbox.txt",
+    "build": "npm-run-all -p build:*",
+    "clean": "rimraf dest/*"
+  },
+  "devDependencies": {
+    "bookmarklet": "1.0.1",
+    "npm-run-all": "^4.1.1",
+    "rimraf": "^2.6.2"
+  }
+}

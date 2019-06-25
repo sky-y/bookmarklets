@@ -1,0 +1,1 @@
+javascript:(function()%7Bif(%22dynalist.io%22%3D%3Dlocation.hostname)%7Bconst%20urlOutline%3Dwindow.location.href%2Cre%3DRegExp(%22https%3A%2F%2Fdynalist.io%2Fd%2F(.%2B)%22)%2CurlMindmap%3DurlOutline.replace(re%2C%22https%3A%2F%2Fdynalist.io%2Fmindmap%2F%241%22)%3Bwindow.location%3DurlMindmap%7D%7D)()
